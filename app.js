@@ -63,6 +63,8 @@ const init = () => {
     .prompt(questions)
     .then(userResponse => {
       console.log('Generating README...');
+      console.log(userResponse);
+
       generateMarkdown('README.md', markdownTemplate(userResponse));
     })
     .catch(err => {
