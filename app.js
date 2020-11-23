@@ -1,4 +1,7 @@
 const inquirer = require('inquirer');
+const fs = require('fs');
+const path = require('path');
+const markdownTemplate = require('./utils/markdownTemplate');
 
 const questions = [
   {
@@ -51,10 +54,17 @@ const questions = [
   }
 ];
 
+const generateMarkdown = (fileName, data) => {
+  return fs.writeFileSync(path.join(process.cwd(), fileName), data);
+};
+
 const init = () => {
   inquirer
     .prompt(questions)
-    .then(userResponses => console.log(userResponses))
+    .then(userResponse => {
+      console.log('Generating README...');
+      generateMarkdown('README.md', markdownTemplate(userResponse));
+    })
     .catch(err => {
       if (err) {
         throw err;
@@ -63,3 +73,4 @@ const init = () => {
 };
 
 init();
+
