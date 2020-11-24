@@ -1,8 +1,9 @@
-# Stupid
+# README Generator
+  ![GitHub license](https://img.shields.io/badge/license-GPL3.0-blue.svg)
 
   ## Description
 
-  It's pretty dumb
+  A simple Node.js app that auto-generates a project README file populated with user responses from questions prompted with npm inquirer
 
 
   ## Table of Contents
@@ -10,6 +11,8 @@
   * [Installation](#installation)
 
   * [Usage](#usage)
+  
+  * [License](#license)
 
   * [Contributing](#contributing)
 
@@ -28,12 +31,16 @@
 
   ## Usage
 
-  Not a lot of caca
+  
+
+  # License
+      
+This project is licensed under the GPL3.0 license.
 
 
   ## Contributing
 
-  A whole lot of caca
+  
 
 
   ## Tests
@@ -41,10 +48,12 @@
   To run tests, run the following command:
 
   ```
-  npm test
+  test
   ```
 
+  
+  ## Questions
 
-  If you have any questions about this repo, open an issue or contact me directly at mike@mike.com. You can find more of my work at [undefined](https://github.com/undefined).
+  If you have any questions about this repo, open an issue or contact me directly at mike@sddeveloper.io. You can find more of my work at [DevMike42](https://github.com/DevMike42).
 
   
